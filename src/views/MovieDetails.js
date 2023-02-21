@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { MoviesService } from "../api/MoviesService";
-export const MovieDetail = () => {
+
+export const MovieDetails = () => {
   const [movie, setMovie] = useState({});
   const { id } = useParams();
   useEffect(() => {
